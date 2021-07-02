@@ -1,6 +1,40 @@
-.container{
+@import url(./custom-reset.css);
+.container {
   max-width: 1448px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
+
+.inner {
+  display: flex;
+  min-height: 100vh;
+}
+.inner .info {
+  flex: 30% 1 1;
+  background-color: #002e58;
+  padding: 40px 20px 20px;
+}
+.inner .content {
+  flex: 70% 1 1;
+  background-color: #fff;
+  padding: 40px 20px 20px;
+}
+.inner .info-flex {
+  display: flex;
+  flex-direction: column;
+}
+.inner .content-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.info__user {
+  color: #fff;
+}
+.info__user-title {
+  text-transform: uppercase;
+}
+.info__user > li:not(:last-child) {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */
