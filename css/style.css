@@ -1,5 +1,10 @@
 @import url(./custom-reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+body {
+  background-color: #d0e9f3;
+  padding: 40px;
+}
+
 .container {
   max-width: 900px;
   width: 100%;
