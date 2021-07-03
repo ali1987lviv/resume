@@ -33,9 +33,36 @@ body {
   background-color: #002e58;
   padding: 40px 20px 20px;
   color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.inner .info .moveButton {
+  position: absolute;
+  right: -17px;
+  top: 144px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  background-color: #002e58;
+  -webkit-animation: moveLeftRight 0.5s alternate ease infinite;
+          animation: moveLeftRight 0.5s alternate ease infinite;
+}
+.inner .info.hidden {
+  flex: 6% 1 1;
+}
+.inner .info.hidden .info-flex {
+  display: none;
+}
+.inner .info.hidden .moveButton.hidden i {
+  transform: rotate(180deg) translate(-10%, 0%);
 }
 .inner .content {
-  flex: 70% 1 1;
+  flex: 100% 1 1;
   background-color: #fff;
   padding: 20px 20px 20px;
 }
@@ -106,6 +133,20 @@ body {
   justify-content: space-between;
   margin-bottom: 15px;
 }
+.languages .languages__item_name {
+  margin-bottom: 5px;
+}
+.languages .languages__item_level {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  width: 60%;
+  height: 8px;
+  padding: 1px;
+}
+.languages .languages__item_level--value {
+  background-color: #1487bb;
+  height: 100%;
+}
 
 .personal {
   width: 100%;
@@ -135,13 +176,12 @@ body {
   flex: 20% 1 1;
   height: auto;
   border: 2px solid #002e58;
-  border-radius: 50%;
+  border-radius: 50% 50% 50% 10%;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   min-width: 100px;
 }
 .personal .personal__photo img {
-  border-radius: 50%;
   width: 100%;
   height: 100%;
   max-width: 160px;
@@ -157,4 +197,22 @@ body {
   height: 2px;
   background-color: #002e58;
   border-radius: 15px;
+}
+
+@-webkit-keyframes moveLeftRight {
+  0% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-1px);
+  }
+}
+
+@keyframes moveLeftRight {
+  0% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-1px);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,9 @@
+const skillsContainer = document.querySelector('.skills')
+const languagesContainer = document.querySelector('.languages')
+const moveButton = document.querySelector('.moveButton')
+const infoBlock = document.querySelector('.info')
+let state = true
+
 const skills = [
   {name: 'HTML', level: 100},
   {name: 'CSS', level: 100},
@@ -18,14 +24,11 @@ const skills = [
 
 const languages = [
   {name: 'Russian', level: 100},
-  {name: 'Ukrainian', level: 100},
-  {name: 'English', level: 60},
+  {name: 'Ukrainian', level: 90},
+  {name: 'English', level: 55},
   {name: 'Arabic', level: 50},
-  {name: 'Turkish', level: 40},
+  {name: 'Turkish', level: 35},
 ]
-
-const skillsContainer = document.querySelector('.skills')
-const languagesContainer = document.querySelector('.languages')
 
 skills.map(el => {
   const div = document.createElement('div')
@@ -51,3 +54,14 @@ languages.map(el => {
 
   languagesContainer.appendChild(div)
 })
+
+const toggleInfoBlock = () => {
+  state ? infoBlock.classList.add('hidden')
+    + moveButton.classList.add('hidden')
+    : infoBlock.classList.remove('hidden')
+    + moveButton.classList.remove('hidden')
+
+  state = !state
+}
+
+moveButton.addEventListener('click', toggleInfoBlock)
