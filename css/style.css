@@ -16,6 +16,7 @@
   flex: 30% 1 1;
   background-color: #002e58;
   padding: 40px 20px 20px;
+  color: #fff;
 }
 .inner .content {
   flex: 70% 1 1;
@@ -31,15 +32,17 @@
   flex-direction: column;
 }
 
-.info__user {
-  color: #fff;
-}
-.info__user-title {
+.title {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
-.info__user-linkedin--icon {
+
+.info__user {
+  margin-bottom: 40px;
+}
+.info__user .linkedin--icon {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -51,4 +54,25 @@
 }
 .info__user > li:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.skills .skills__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.skills .skills__item_name {
+  margin-bottom: 10px;
+}
+.skills .skills__item_level {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  width: 100%;
+  height: 10px;
+  background-color: #fff 80%;
+  padding: 1px;
+}
+.skills .skills__item_level--value {
+  background-color: #fff;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
