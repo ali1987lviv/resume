@@ -1,9 +1,10 @@
 @import url(./custom-reset.css);
 .container {
-  max-width: 1448px;
+  max-width: 900px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
+  font-family: Montserrat, sans-serif;
 }
 
 .inner {
@@ -34,6 +35,16 @@
 }
 .info__user-title {
   text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.info__user-linkedin--icon {
+  font-size: 20px;
+  font-weight: 600;
+}
+.info__user > li, .info__user > li > a {
+  display: flex;
+  align-items: center;
 }
 .info__user > li:not(:last-child) {
   margin-bottom: 20px;
