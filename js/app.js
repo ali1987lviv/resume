@@ -27,6 +27,5 @@ skills.map((el, i)=> {
       <div class='skills__item_level--value' style='width:${el.level};'></div>
     </span>
     `
-
   skillsContainer.appendChild(div)
 })
