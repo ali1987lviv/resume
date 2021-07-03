@@ -30,6 +30,7 @@ body {
 }
 .inner .info {
   flex: 30% 1 1;
+  transition: flex 0.4s ease;
   background-color: #002e58;
   padding: 40px 20px 20px;
   color: #fff;
@@ -54,6 +55,7 @@ body {
 }
 .inner .info.hidden {
   flex: 6% 1 1;
+  transition: flex 0.4s ease;
 }
 .inner .info.hidden .info-flex {
   display: none;

@@ -27,6 +27,7 @@ body{
 
   .info{
     flex: 30% 1 1;
+    transition: flex .4s ease;
     background-color: #002e58;
     padding: 40px 20px 20px;
     color: #fff;
@@ -52,6 +53,7 @@ body{
 
   .info.hidden{
     flex: 6% 1 1;
+    transition: flex .4s ease;
 
     .info-flex{
       display: none;
