@@ -50,6 +50,11 @@ body {
   position: relative;
   z-index: 1;
 }
+@media screen and (max-width: 800px) {
+  .inner .info {
+    flex: 100% 1 1;
+  }
+}
 .inner .info .tumbler {
   position: absolute;
   right: -17px;
@@ -87,6 +92,30 @@ body {
   flex: 100% 1 1;
   background-color: #fff;
   padding: 20px 20px 20px;
+}
+@media screen and (max-width: 800px) {
+  .inner .content {
+    flex: 20px 1 1;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .inner .content .content-flex {
+    display: none;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .inner .content.full {
+    flex: 100% 1 1;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .inner .content.full .content-flex {
+    display: block;
+    padding: 20px;
+  }
 }
 .inner .info-flex {
   display: flex;

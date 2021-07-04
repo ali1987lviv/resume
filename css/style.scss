@@ -39,6 +39,10 @@ body{
     position: relative;
     z-index: 1;
 
+    @media screen and (max-width: '800px') {
+      flex: 100% 1 1;
+    }
+
     .tumbler{
       position: absolute;
       right: -17px;
@@ -81,6 +85,31 @@ body{
     flex: 100% 1 1;
     background-color: #fff;
     padding: 20px 20px 20px;
+    
+    @media screen and (max-width: '800px') {
+      flex: 20px 1 1;
+      padding: 0;
+    }
+
+    & .content-flex {
+      @media screen and (max-width: '800px') {
+        display: none;
+        padding: 0;
+      }
+    }
+  }
+
+  .content.full{
+    @media screen and (max-width: '800px') {
+      flex: 100% 1 1;
+      padding: 0;
+    }
+    & .content-flex {
+      @media screen and (max-width: '800px') {
+        display: block;
+        padding: 20px;
+      }
+    }
   }
 
   .info-flex{

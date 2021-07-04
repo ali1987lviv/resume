@@ -62,7 +62,6 @@ languages.map(el => {
       <div class='languages__item_level--value' style='width:${el.level}%;'></div>
     </span>
     `
-
   languagesContainer.appendChild(div)
 })
 
