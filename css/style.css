@@ -54,8 +54,15 @@ body {
           animation: moveLeftRight 0.5s alternate ease infinite;
 }
 .inner .info.hidden {
-  flex: 6% 1 1;
+  flex: 5% 1 1;
   transition: flex 0.4s ease;
+  padding: 0;
+}
+@media screen and (max-width: 800px) {
+  .inner .info.hidden {
+    flex: 20px 1 1;
+    padding: 0;
+  }
 }
 .inner .info.hidden .info-flex {
   display: none;
