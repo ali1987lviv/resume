@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-  max-width: 900px;
+  max-width: 1000px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
@@ -257,7 +257,36 @@ body{
 
 .description{
   margin-bottom: 40px;
-  
+
+  .description__subtitle{
+    & div{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+
+    h3{
+      font-weight: 700;
+      font-size: 15px;
+    }
+
+    h4{
+      font-style: italic;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    p{
+      color: #002e58;
+      font-weight: 600;
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+
   .description__text{
     margin-left: 20px;
   }
@@ -274,6 +303,9 @@ body{
     list-style-type: disc;
   }
 }
+
+
+
 
 // Animations:
 @keyframes moveLeftRight {
