@@ -1,7 +1,8 @@
 const skillsContainer = document.querySelector('.skills')
 const languagesContainer = document.querySelector('.languages')
-const moveButton = document.querySelector('.moveButton')
+const tumbler = document.querySelector('.tumbler')
 const infoBlock = document.querySelector('.info')
+const contentBlock = document.querySelector('.content')
 let state = true
 
 const skills = [
@@ -55,13 +56,16 @@ languages.map(el => {
   languagesContainer.appendChild(div)
 })
 
-const toggleInfoBlock = () => {
-  state ? infoBlock.classList.add('hidden')
-    + moveButton.classList.add('hidden')
+const toggleHandler = () => {
+  state 
+    ? infoBlock.classList.add('hidden')
+      + tumbler.classList.add('hidden')
+      + contentBlock.classList.add('full')
     : infoBlock.classList.remove('hidden')
-    + moveButton.classList.remove('hidden')
+      + tumbler.classList.remove('hidden')
+      + contentBlock.classList.remove('full')
 
   state = !state
 }
 
-moveButton.addEventListener('click', toggleInfoBlock)
+tumbler.addEventListener('click', toggleHandler)

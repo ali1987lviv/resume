@@ -1,5 +1,6 @@
 @import url(./custom-reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
 body {
   background-color: #d0e9f3;
   padding: 40px;
@@ -37,7 +38,7 @@ body {
   position: relative;
   z-index: 1;
 }
-.inner .info .moveButton {
+.inner .info .tumbler {
   position: absolute;
   right: -17px;
   top: 144px;
@@ -67,7 +68,7 @@ body {
 .inner .info.hidden .info-flex {
   display: none;
 }
-.inner .info.hidden .moveButton.hidden i {
+.inner .info.hidden .tumbler.hidden i {
   transform: rotate(180deg) translate(-10%, 0%);
 }
 .inner .content {
@@ -159,6 +160,7 @@ body {
 
 .personal {
   width: 100%;
+  margin-bottom: 40px;
 }
 .personal .personal--flex {
   display: flex;
@@ -171,7 +173,7 @@ body {
 .personal .personal__text--title {
   font-size: 38px;
   line-height: 40px;
-  font-weight: 900;
+  font-weight: 700;
 }
 .personal .personal__text--desc {
   font-size: 15px;
@@ -189,11 +191,12 @@ body {
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   min-width: 100px;
+  max-width: 110px;
 }
 .personal .personal__photo img {
   width: 100%;
   height: 100%;
-  max-width: 160px;
+  max-width: 110px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -206,6 +209,33 @@ body {
   height: 2px;
   background-color: #002e58;
   border-radius: 15px;
+}
+
+.content__title {
+  font-size: 20px;
+  color: #002e58;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.description {
+  margin-bottom: 40px;
+}
+.description .description__text {
+  margin-left: 20px;
+}
+.description .description__text ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.description .description__text ul li {
+  font-weight: 400;
+  color: #333;
+  font-size: 14px;
+  line-height: 19px;
+  display: list-item;
+  list-style-type: disc;
 }
 
 @-webkit-keyframes moveLeftRight {
