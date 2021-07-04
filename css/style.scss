@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
+.mb-0{margin-bottom: 0px !important;}
+.mb-10{margin-bottom: 10px !important;}
+.mb-20{margin-bottom: 20px !important;}
+
 body{
   background-color: rgb(208, 233, 243);
   padding: 40px;
@@ -267,8 +271,9 @@ body{
     }
 
     h3{
-      font-weight: 700;
+      font-weight: 600;
       font-size: 15px;
+      line-height: normal;
     }
 
     h4{
@@ -279,11 +284,18 @@ body{
       margin-bottom: 15px;
     }
 
+    h5{
+      font-weight: 500;
+      font-size: 15px;
+      line-height: normal;
+    }
+
     p{
       color: #002e58;
       font-weight: 600;
       font-size: 12px;
       padding-left: 10px;
+      white-space: nowrap;
     }
   }
 

@@ -1,6 +1,18 @@
 @import url(./custom-reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
 body {
   background-color: #d0e9f3;
   padding: 40px;
@@ -229,8 +241,9 @@ body {
   margin-bottom: 5px;
 }
 .description .description__subtitle h3 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
+  line-height: normal;
 }
 .description .description__subtitle h4 {
   font-style: italic;
@@ -239,11 +252,17 @@ body {
   margin-top: 10px;
   margin-bottom: 15px;
 }
+.description .description__subtitle h5 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: normal;
+}
 .description .description__subtitle p {
   color: #002e58;
   font-weight: 600;
   font-size: 12px;
   padding-left: 10px;
+  white-space: nowrap;
 }
 .description .description__text {
   margin-left: 20px;
